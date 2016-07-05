@@ -34,7 +34,6 @@ func (q *Queue) enqueue(data int) {
 	}
 	q.tailindex = (q.tailindex + 1) % size
 	q.list[q.tailindex] = data
-//	q.tailindex++
 	if q.headindex == special_value {
 		q.headindex = q.tailindex
 	}
@@ -77,8 +76,8 @@ func main() {
 		q.enqueue(i)
 	}
 	fmt.Println(q)
-	fmt.Println(q.dequeue())
-	fmt.Println(q.dequeue())
+	q.dequeue()
+	q.dequeue()
 	fmt.Println(q)
 	q.dequeue()
 	q.dequeue()
