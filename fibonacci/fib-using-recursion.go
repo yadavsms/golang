@@ -5,7 +5,6 @@ import (
 	"fmt"
 )
 
-// Using recursion
 func fib(n int) int {
 	if n <=3 { 
 		return 1
