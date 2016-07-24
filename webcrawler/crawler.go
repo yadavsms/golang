@@ -17,7 +17,7 @@ func main() {
 	flag.Parse()
 	args := flag.Args()
 	if len(args) < 2 {
-		fmt.Println("Please specify start page and depth(example:~#go run crawl-channel.go http://golang.org 2)")
+		fmt.Println("Please specify start page and depth(example:~#go run crawler.go http://golang.org 2)")
 		os.Exit(1)
 	}
 	url := args[0]
